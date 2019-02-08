@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "en-US"
 title                    : "Site Title"
 title_separator          : "-"
-name                     : "Rafi Small"
+name                     : "	 Small"
 description              : "An amazing website..."
 url                      : # url: "https://Rafi-Small.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -273,14 +273,19 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
+  # _portfolio
   - scope:
       path: ""
-      type: posts
+      type: portfolio
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: true
       related: true
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
